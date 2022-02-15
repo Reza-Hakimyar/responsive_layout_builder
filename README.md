@@ -1,6 +1,7 @@
 # responsive
 
-A new Flutter project.
+# This project will help you to develop a responsive website, mobile and desktop application.
+# I attached a video of this project as well to show how it works. 
 
 ## Getting Started
 
