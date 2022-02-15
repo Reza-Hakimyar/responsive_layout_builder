@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../constants.dart';
+
 class TabletScreen extends StatelessWidget {
   const TabletScreen({Key? key}) : super(key: key);
 
@@ -17,6 +19,9 @@ class TabletScreen extends StatelessWidget {
               margin: const EdgeInsets.all(10.0),
               color: Colors.green,
               height: 200,
+              child: Center(
+                child: Text('Banner', style: headingStyle),
+              ),
             ),
           ),
           Expanded(
@@ -27,6 +32,9 @@ class TabletScreen extends StatelessWidget {
                   margin: const EdgeInsets.all(8.0),
                   color: Colors.blue,
                   height: 110,
+                  child: Center(
+                    child: Text('Content', style: headingStyle),
+                  ),
                 );
               },
             ),

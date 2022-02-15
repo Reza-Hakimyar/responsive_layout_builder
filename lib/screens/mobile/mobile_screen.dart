@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../constants.dart';
+
 class MobileScreen extends StatelessWidget {
   const MobileScreen({Key? key}) : super(key: key);
 
@@ -18,6 +20,9 @@ class MobileScreen extends StatelessWidget {
               child: Container(
                 height: 200,
                 color: Colors.green,
+                child: const Center(
+                  child: Text('banner', style: headingStyle),
+                ),
               ),
             ),
           ),
@@ -29,6 +34,9 @@ class MobileScreen extends StatelessWidget {
                   margin: const EdgeInsets.all(10.0),
                   height: 110,
                   color: Colors.purple,
+                  child: Center(
+                    child: Text('Content', style: headingStyle),
+                  ),
                 );
               },
             ),

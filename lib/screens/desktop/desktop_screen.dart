@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive/constants.dart';
 
 class DesktopScreen extends StatelessWidget {
   const DesktopScreen({Key? key}) : super(key: key);
@@ -15,6 +16,9 @@ class DesktopScreen extends StatelessWidget {
                   margin: const EdgeInsets.all(10.0),
                   color: Colors.green,
                   height: 200,
+                  child: Center(
+                    child: Text('Banner Frame', style: headingStyle),
+                  ),
                 ),
                 Expanded(
                   child: ListView.builder(
@@ -22,6 +26,9 @@ class DesktopScreen extends StatelessWidget {
                       margin: const EdgeInsets.all(10.0),
                       color: Colors.teal,
                       height: 110,
+                      child: Center(
+                        child: Text('Content', style: headingStyle),
+                      ),
                     ),
                   ),
                 ),
@@ -29,9 +36,12 @@ class DesktopScreen extends StatelessWidget {
             ),
           ),
           Container(
+            alignment: Alignment.center,
             margin: const EdgeInsets.only(right: 10.0, top: 10.0),
-            color: Colors.black12,
-            width: 200,
+            color: Colors.black45,
+            width: 300,
+            height: double.infinity,
+            child: Text('Navigation Frame', style: headingStyle),
           ),
         ],
       ),
